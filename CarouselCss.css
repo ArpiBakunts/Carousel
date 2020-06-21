@@ -1,0 +1,73 @@
+.data-carousel {
+    width: 900px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.data-images {
+    width: 4500px;
+    height: 600px;
+    position: relative;
+    -webkit-transition: left 2s;
+    scroll-behavior: smooth;
+    display: flex;
+}
+
+.data-image {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.image-button {
+    top: -20px;
+    position: relative;
+}
+
+.switch-button {
+    display: inline-flex;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#image-1:target~ .data-images {
+    left: 0;
+}
+
+#image-2:target~ .data-images {
+    left: -900px;
+}
+
+#image-3:target~ .data-images {
+    left: -1800px;
+}
+
+#image-4:target~ .data-images {
+    left: -2700px;
+}
+
+#image-5:target~ .data-images {
+    left: -3600px;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    margin-top: -2em;
+    position:relative;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, white, skyblue);
+}
